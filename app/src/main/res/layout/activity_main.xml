@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/Calcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="72dp"
+        android:text="Calcular"
+        app:layout_constraintBottom_toTopOf="@+id/distancia_usuario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tempo_gasto" />
+
+    <EditText
+        android:id="@+id/distancia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="Insira a distancia"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/pedagios"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/pedagios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginBottom="28dp"
+        android:ems="10"
+        android:hint="Insira quantos pedagios"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/tempo_gasto"
+        app:layout_constraintStart_toStartOf="@+id/distancia"
+        app:layout_constraintTop_toBottomOf="@+id/distancia" />
+
+    <TextView
+        android:id="@+id/litros"
+        android:layout_width="2dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="35dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/preco_total"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/distancia_usuario" />
+
+    <TextView
+        android:id="@+id/preco_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="34dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/media_velocidade"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/litros" />
+
+    <EditText
+        android:id="@+id/tempo_gasto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:ems="10"
+        android:hint="Insira o tempo gasto"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/Calcular"
+        app:layout_constraintStart_toStartOf="@+id/pedagios"
+        app:layout_constraintTop_toBottomOf="@+id/pedagios" />
+
+    <TextView
+        android:id="@+id/media_velocidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="131dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/preco_total" />
+
+    <TextView
+        android:id="@+id/distancia_usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="29dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/litros"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Calcular" />
+
+    <TextView
+        android:id="@+id/tempo_tot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="32dp"
+        android:background="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Calcular" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
